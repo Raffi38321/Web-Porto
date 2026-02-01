@@ -1,9 +1,9 @@
-import NavBar from "./components/NavBar";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="px-11 py-7 bg-[#D9D9D9] min-h-[3000px]">
-      <NavBar />
+    <div className="">
+      <HomePage />
     </div>
   );
 }
