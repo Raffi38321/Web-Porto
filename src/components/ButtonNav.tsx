@@ -1,11 +1,14 @@
 import React from "react";
 import { motion } from "motion/react";
+import { useNavigate } from "react-router-dom";
 
 type BNav = {
   children: string;
+  link: string;
 };
 
-const ButtonNav = ({ children }: BNav) => {
+const ButtonNav = ({ children, link }: BNav) => {
+  const navigate = useNavigate();
   return (
     <motion.div
       className="
@@ -17,6 +20,7 @@ const ButtonNav = ({ children }: BNav) => {
       initial="rest"
       whileHover="hover"
       animate="rest"
+      onClick={() => navigate(link)}
     >
       <motion.div
         variants={{
@@ -34,8 +38,10 @@ const ButtonNav = ({ children }: BNav) => {
       <motion.p
         className="
           relative z-10
-          font-bold text-[24px]
+          font-bold text-[19px]
+          md:text-[24px]
           font-jetbrainMono
+          text-center
         "
         variants={{
           rest: { color: "#000" },
