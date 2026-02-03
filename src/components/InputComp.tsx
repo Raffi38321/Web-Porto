@@ -4,7 +4,7 @@ type T = {
   placeholder: string;
   type: string;
   value: string;
-  setValue: any;
+  setValue: React.Dispatch<React.SetStateAction<string>>;
   text: string;
   bawah?: boolean;
 };

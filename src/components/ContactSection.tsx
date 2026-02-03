@@ -4,13 +4,13 @@ const ContactSection = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const handelSubmit = (e) => {
+  const handelSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     console.log(name);
   };
 
   return (
-    <section className="dark-section px-20 py-7 min-h-screen bg-[#222222]">
+    <section className="dark-section px-11 py-7 min-h-[600px] bg-[#222222]">
       <p className="text-[70px] font-sora font-extrabold text-white">
         LET'S WORK
       </p>
