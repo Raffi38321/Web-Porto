@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import InputComp from "./InputComp";
-
 const ContactSection = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -11,7 +10,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="px-20 py-7 min-h-screen bg-[#222222]">
+    <section className="dark-section px-20 py-7 min-h-screen bg-[#222222]">
       <p className="text-[70px] font-sora font-extrabold text-white">
         LET'S WORK
       </p>
@@ -43,6 +42,23 @@ const ContactSection = () => {
           type="text"
           bawah={true}
         />
+        <button
+          type="submit"
+          onClick={handelSubmit}
+          className="
+            font-sora font-bold text-[20px] md:text-[24px]
+            w-full mt-10
+            py-4
+          bg-[#FF4F00] text-white
+            rounded-xl
+            transition-all duration-300
+           hover:bg-[#e64500] hover:scale-[1.02]
+            active:scale-[0.98]
+            shadow-md hover:shadow-lg
+            "
+        >
+          SUBMIT
+        </button>
       </form>
     </section>
   );

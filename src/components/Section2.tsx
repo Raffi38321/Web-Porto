@@ -1,4 +1,3 @@
-import React from "react";
 import SpinText from "./SpinText";
 import Section2MiddleText from "./Section2MiddleText";
 import { motion } from "motion/react";
@@ -14,7 +13,7 @@ const container = {
 
 const Section2 = () => {
   return (
-    <section className="px-11 py-7 min-h-[600px] bg-[#222222] flex flex-col justify-center items-center">
+    <section className="dark-section px-11 py-7 min-h-[600px] bg-[#222222] flex flex-col justify-center items-center">
       <SpinText
         speed={250}
         items={[

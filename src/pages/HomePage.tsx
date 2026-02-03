@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import IntroSection from "../components/IntroSection";
 import NavBar from "../components/NavBar";
 import Section2 from "../components/Section2";

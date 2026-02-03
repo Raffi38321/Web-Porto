@@ -5,18 +5,20 @@ import { useNavigate } from "react-router-dom";
 type BNav = {
   children: string;
   link: string;
+  darkSection: boolean;
 };
 
-const ButtonNav = ({ children, link }: BNav) => {
+const ButtonNav = ({ children, link, darkSection }: BNav) => {
   const navigate = useNavigate();
   return (
     <motion.div
-      className="
+      className={`
         relative inline-block
-        border-2 border-black
+        border-2 
         px-[10px] py-[1px]
-        overflow-hidden
-      "
+        overflow-hidden transition-all duration-500 ease-out
+        ${darkSection ? "border-white" : "border-black"}
+      `}
       initial="rest"
       whileHover="hover"
       animate="rest"
@@ -36,15 +38,16 @@ const ButtonNav = ({ children, link }: BNav) => {
       />
 
       <motion.p
-        className="
+        className={`
           relative z-10
           font-bold text-[19px]
           md:text-[24px]
           font-jetbrainMono
           text-center
-        "
+          overflow-hidden transition-all duration-500 ease-out
+        `}
         variants={{
-          rest: { color: "#000" },
+          rest: { color: darkSection ? "#fff" : "#000" },
           hover: { color: "#000" },
         }}
       >
