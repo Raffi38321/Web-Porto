@@ -10,11 +10,11 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="dark-section px-11 py-7 min-h-[600px] bg-[#222222]">
-      <p className="text-[70px] font-sora font-extrabold text-white">
+    <section className="dark-section px-11 py-7 min-h-[700px] bg-[#222222] flex flex-col justify-center">
+      <p className="text-[60px] lg:text-[70px] font-sora font-extrabold text-white mb-0">
         LET'S WORK
       </p>
-      <p className="text-[64px] font-sora font-extrabold text-[#D9D9D9]">
+      <p className="text-[50px] lg:text-[64px] font-sora font-extrabold text-[#D9D9D9]">
         TOGETHER
       </p>
       <form>

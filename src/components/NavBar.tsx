@@ -23,14 +23,11 @@ const NavBar = () => {
     return () => observer.disconnect();
   }, []);
   return (
-    <nav className="px-11 py-7 flex justify-between items-center fixed top-7 left-0 w-full z-50 ">
-      <h1
-        className={`  transition-all duration-500 ease-out text-[19px] font-bold font-sora md:text-[24px] ${darkSection ? "text-white" : "text-black"}`}
-      >
-        Muhammad Raffi
-      </h1>
-
+    <nav className="px-11 py-7 flex justify-center md:justify-end  fixed top-7 left-0 w-full z-50 ">
       <section className="flex">
+        <ButtonNav darkSection={darkSection} link="/">
+          Home
+        </ButtonNav>
         <ButtonNav darkSection={darkSection} link="/project">
           Project
         </ButtonNav>
