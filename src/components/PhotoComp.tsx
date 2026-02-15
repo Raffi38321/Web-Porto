@@ -10,7 +10,7 @@ const PhotoComp = ({ link }: T) => {
       className="relative w-fit"
       initial="rest"
       whileInView="animate"
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: false, amount: 0.5 }}
       whileHover="rest"
     >
       {/* ini sahdownya */}

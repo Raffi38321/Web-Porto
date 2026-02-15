@@ -2,14 +2,22 @@ import { motion } from "framer-motion";
 
 type T = {
   children: string;
+  atas?: boolean;
 };
 
 const DURATION = 0.25;
 const STAGGER = 0.025;
 
-const IntroText = ({ children }: T) => {
+const IntroText = ({ children, atas }: T) => {
+  const initialValue = atas ? { x: -100 } : { x: 100 };
   return (
-    <div className=" border-black border-2 px-7 py-3">
+    <motion.div
+      className="border-black border-2 px-7 py-3"
+      initial={{ ...initialValue, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      viewport={{ once: false, amount: 0.4 }}
+      transition={{ ease: "easeOut" }}
+    >
       <motion.div
         className="relative overflow-hidden font-sora font-bold text-[50px] md:text-[64px] leading-none"
         initial="initial"
@@ -57,7 +65,7 @@ const IntroText = ({ children }: T) => {
           ))}
         </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

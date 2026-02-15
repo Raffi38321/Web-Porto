@@ -13,7 +13,7 @@ const container = {
 
 const Section2 = () => {
   return (
-    <section className="dark-section px-11 py-7 min-h-[600px] bg-[#222222] flex flex-col justify-center items-center">
+    <section className="dark-section px-11 py-17 min-h-screen bg-[#222222] flex flex-col justify-center items-center gap-3">
       <SpinText
         speed={250}
         items={[
