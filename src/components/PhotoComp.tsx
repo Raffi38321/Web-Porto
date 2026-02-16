@@ -26,7 +26,7 @@ const PhotoComp = ({ link }: T) => {
       {/* ini bagian photo jangan di ubah ubah anjing  pening gua beresinnya */}
       <motion.img
         src={link}
-        className="relative w-64 rounded-md object-cover"
+        className="relative w-40 md:w-64 rounded-md object-cover"
         variants={{
           rest: { x: 0, y: 0 },
           animate: { x: 10, y: -10 },

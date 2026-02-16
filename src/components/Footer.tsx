@@ -4,13 +4,12 @@ import { IoLogoLinkedin } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <footer className="dark-section bg-[#222222] overflow-hidden">
+    <footer className="dark-section px-6 py-10 md:px-11 md:py-7 bg-[#222222] overflow-hidden ">
       <div
         className="
         border-t-[6px] md:border-t-[10px] border-white
-        flex flex-col md:flex-row
+        flex flex-row
         justify-between items-center
-        px-5 md:px-11
         py-6 md:py-7
         gap-4 md:gap-0
         text-center md:text-left
@@ -20,7 +19,7 @@ const Footer = () => {
         <p
           className="
           font-sora
-          text-base sm:text-lg md:text-xl lg:text-2xl
+          text-[15px] lg:text-[18px] 
           font-bold text-white
         "
         >
@@ -30,15 +29,15 @@ const Footer = () => {
         {/* Social Icons */}
         <section className="flex flex-row">
           <IconComp link="https://github.com/Raffi38321">
-            <FaGithub className="text-white text-xl md:text-2xl hover:text-black transition" />
+            <FaGithub className="text-white text-sm md:text-xl hover:text-black transition" />
           </IconComp>
 
           <IconComp link="https://www.linkedin.com/in/raffi-muhammad-52658130a/">
-            <IoLogoLinkedin className="text-white text-xl md:text-2xl hover:text-black transition" />
+            <IoLogoLinkedin className="text-white text-sm md:text-xl hover:text-black transition" />
           </IconComp>
 
           <IconComp link="https://www.facebook.com/profile.php?id=100074059760518">
-            <FaFacebookSquare className="text-white text-xl md:text-2xl hover:text-black transition" />
+            <FaFacebookSquare className="text-white text-sm md:text-xl hover:text-black transition" />
           </IconComp>
         </section>
       </div>

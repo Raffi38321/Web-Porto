@@ -13,10 +13,10 @@ const ContactSection = () => {
   return (
     <section className="dark-section  bg-[#222222]">
       <FocusSection style=" min-h-[700px] px-6 py-10 md:px-11 md:py-7 flex flex-col justify-center overflow-hidden">
-        <p className="text-[40px] md:text-[60px] lg:text-[70px] font-sora font-extrabold text-white mb-0">
+        <p className="text-[30px] md:text-[50px] font-sora font-extrabold text-white mb-0">
           LET'S WORK
         </p>
-        <p className="text-[32px] md:text-[50px] lg:text-[64px] font-sora font-extrabold text-[#D9D9D9]">
+        <p className="text-[30px] md:text-[50px] font-sora font-extrabold text-[#D9D9D9]">
           TOGETHER
         </p>
         <form>
@@ -48,14 +48,13 @@ const ContactSection = () => {
             type="submit"
             onClick={handelSubmit}
             className="
-            font-sora font-bold text-[20px] md:text-[24px]
+            font-sora font-bold text-[12px] lg:text-[15px]
             w-full mt-10
             py-4
           bg-[#FF4F00] text-white
             rounded-xl
             transition-all duration-300
-           hover:bg-[#e64500] hover:scale-[1.02]
-            active:scale-[0.98]
+           hover:bg-[#e64500] 
             shadow-md hover:shadow-lg
             "
           >
