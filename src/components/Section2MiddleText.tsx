@@ -20,7 +20,7 @@ const Section2MiddleText = ({ children }: T) => {
   return (
     <motion.p
       variants={item}
-      className="text-[#FF6F61] font-sora text-[28px] lg:text-[32px] font-bold"
+      className="text-[#FF6F61] font-sora text-[18px] lg:text-[32px] font-bold"
     >
       {children}
     </motion.p>

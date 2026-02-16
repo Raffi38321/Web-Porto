@@ -15,6 +15,7 @@ const ButtonNav = ({ children, link, darkSection }: BNav) => {
         relative inline-block
         border-2 
         px-[10px] py-[1px]
+        sm:px-[5px]
         overflow-hidden transition-all duration-500 ease-out
         ${darkSection ? "border-white" : "border-black"}
       `}
@@ -39,8 +40,8 @@ const ButtonNav = ({ children, link, darkSection }: BNav) => {
       <motion.p
         className={`
           relative z-10
-          font-bold text-[19px]
-          md:text-[24px]
+          font-bold text-[12px]
+          md:text-[15px]
           font-jetbrainMono
           text-center
           overflow-hidden transition-all duration-500 ease-out

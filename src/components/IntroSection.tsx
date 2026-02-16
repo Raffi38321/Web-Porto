@@ -4,15 +4,15 @@ import { motion } from "motion/react";
 
 const IntroSection = () => {
   return (
-    <div className="min-h-screen bg-[#D9D9D9] pt-24 px-11 flex flex-col justify-center items-center">
-      <FocusSection>
+    <section className="bg-[#D9D9D9]">
+      <FocusSection style="min-h-screen flex flex-col justify-center items-center pt-20 px-6 md:pt-24 md:px-11 overflow-hidden">
         <div className="flex flex-col items-center">
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center">
             <IntroText atas={true}>FullStack-Web</IntroText>
 
             <motion.p
-              className="font-sora text-[50px] md:text-[64px] font-bold leading-none border-black border-2 px-7 py-3 bg-[#0E4C92] text-white hover:text-black hover:bg-[#FF4F00] transition-all duration-500 ease-out"
-              initial={{ x: 100, opacity: 0 }}
+              className="font-sora text-[30px] md:text-[50px]  font-bold leading-none border-black border-2 px-7 py-3 bg-[#0E4C92] text-white hover:text-black hover:bg-[#FF4F00] transition-all duration-500 ease-out"
+              initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: false, amount: 0.3 }}
               transition={{ ease: "easeInOut", duration: 0.6 }}
@@ -23,14 +23,14 @@ const IntroSection = () => {
 
           <IntroText>Game-Developer</IntroText>
         </div>
-        <p className="font-sora text-[15px] lg:text-[20px] text-center max-w-[958px] mt-[70px]">
+        <p className="font-sora text-[14px] md:text-[15px] lg:text-[20px] text-center max-w-[958px] mt-[50px] md:mt-[70px]">
           I specialize in building modern web applications using React, Next.js,
           and the MERN Stack (MongoDB, Express, React, Node.js). I also develop
           interactive games using Godot, focusing on performance, scalability,
           and user experience.
         </p>
       </FocusSection>
-    </div>
+    </section>
   );
 };
 

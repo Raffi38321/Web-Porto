@@ -4,12 +4,13 @@ import React from "react";
 
 type T = {
   children: React.ReactNode;
+  style: string;
 };
 
-const FocusSection = ({ children }: T) => {
+const FocusSection = ({ children, style }: T) => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    amount: 0.6,
+    amount: 0.5,
   });
 
   return (
@@ -24,6 +25,7 @@ const FocusSection = ({ children }: T) => {
         duration: 0.2,
         ease: "easeOut",
       }}
+      className={style}
     >
       {children}
     </motion.section>

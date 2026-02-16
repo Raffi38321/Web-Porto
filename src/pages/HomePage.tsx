@@ -7,7 +7,7 @@ import AboutMeSection from "../components/AboutMeSection";
 
 const HomePage = () => {
   return (
-    <div className="">
+    <div>
       <NavBar />
       <main>
         <IntroSection />

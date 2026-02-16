@@ -22,9 +22,10 @@ const NavBar = () => {
 
     return () => observer.disconnect();
   }, []);
+
   return (
-    <nav className="px-11 py-7 flex justify-center md:justify-end  fixed top-7 left-0 w-full z-50 ">
-      <section className="flex">
+    <nav className="max-w-screen px-2 md:px-11 py-5 md:py-7 flex justify-center items-center md:justify-end fixed top-0 left-0 w-full z-50 pointer-events-none">
+      <section className="flex pointer-events-auto ">
         <ButtonNav darkSection={darkSection} link="/">
           Home
         </ButtonNav>
