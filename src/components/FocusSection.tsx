@@ -17,7 +17,6 @@ const FocusSection = ({ children, style }: T) => {
     <motion.section
       ref={ref}
       animate={{
-        filter: isInView ? "blur(0px)" : "blur(4px)",
         opacity: 1,
         scale: isInView ? 1 : 0.95,
       }}

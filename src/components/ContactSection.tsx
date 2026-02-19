@@ -11,7 +11,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="dark-section  bg-[#222222]">
+    <section className="dark-section  bg-[#222222] md:px-10">
       <FocusSection style=" min-h-[700px] px-6 py-10 md:px-11 md:py-7 flex flex-col justify-center overflow-hidden">
         <p className="text-[30px] md:text-[50px] font-sora font-extrabold text-white mb-0">
           LET'S WORK

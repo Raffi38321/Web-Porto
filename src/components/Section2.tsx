@@ -14,7 +14,7 @@ const container = {
 
 const Section2 = () => {
   return (
-    <section className="dark-section bg-[#222222]">
+    <section className="dark-section bg-[#222222] md:px-10 md:py-5">
       <FocusSection style="max-w-screen flex flex-col justify-center items-center gap-3 px-6 py-10 md:px-11 md:py-17 min-h-screen overflow-hidden">
         <SpinText
           speed={250}

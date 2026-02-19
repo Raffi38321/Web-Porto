@@ -25,6 +25,7 @@ const PhotoComp = ({ link }: T) => {
 
       {/* ini bagian photo jangan di ubah ubah anjing  pening gua beresinnya */}
       <motion.img
+        alt="photo profile"
         src={link}
         className="relative w-40 md:w-64 rounded-md object-cover"
         variants={{

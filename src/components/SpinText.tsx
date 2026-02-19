@@ -31,7 +31,7 @@ const SpinText = ({ items, speed = 25 }: T) => {
       >
         <div
           ref={ref}
-          className="flex gap-[40px] font-sora text-[20px] lg:text-[24px] text-[#FF6F61]"
+          className="flex gap-[40px] font-sora text-[15px] lg:text-[18px] text-[#FF6F61]"
         >
           {loopItems.map((text, i) => (
             <span key={i}>{text}</span>
